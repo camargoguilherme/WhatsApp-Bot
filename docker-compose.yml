@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  whatsapp_bot:
+    container_name: whatsapp_bot
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      GIPHY_APY_KEY: ${GIPHY_APY_KEY}
+    volumes:
+      - .wwebjs_auth:/home/app/.wwebjs_auth
+      - /home/app/node_modules

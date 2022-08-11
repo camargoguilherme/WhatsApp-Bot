@@ -1,0 +1,9 @@
+node_modules
+dist
+logs
+.editorconfig
+.eslintignore
+prettier.config.js
+README.md
+docker-compose*
+.env*
